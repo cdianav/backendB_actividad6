@@ -1,0 +1,79 @@
+
+.container{
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20xp;
+    background: rgb(220, 235, 242)url('/Img/formDoctores.jpg')no-repeat center;
+    padding: 30px;
+    background-size: cover;
+    
+}
+
+.containerPacientes{
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20xp;
+    background: rgb(220, 235, 242)url('/Img/imgPacientes.png')no-repeat center;
+    padding: 30px;
+    background-size: cover;
+
+
+}
+
+.formDoc{
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    height: 50%;
+    font-size: 25px;
+
+
+}
+
+
+
+.regDoc{
+    width: 30%;
+    background-color: rgb(12, 112, 89);
+    color:white;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+    height: 40px;
+    
+}
+
+.doctorTable{
+
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20xp;
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+    background-color: rgb(213, 241, 241);
+    
+}
+
+.doctorTable th{
+    
+    background-color: rgb(63, 161, 161);
+    height: 40px;
+}
+
+.title{
+  
+    color:rgb(7, 90, 105);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.casilla{
+    font-size: 20px;
+    
+}
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario doctores</title>
+  <link rel="stylesheet" href="/css/Style form.css">  
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<header>
+       
+    <div class="logo">
+     <img src = "/Img/logo hospital.png" alt="Logo hospital">
+       <!--Hospital TakeCare</div>--> 
+      </div>
+       <nav>
+           <a href="home.html">Inicio</a>  <!-- enlaces a pestañas--> 
+           <a href="doctors.html">Registro Doctores</a>
+           <a href="listDoctors.html">Lista Doctores</a>
+          <a href="patients.html">Registro Pacientes</a>
+          <a href="listPatients.html">Lista Pacientes</a>
+          
+  </nav>
+</header>
+<body>
+<main>
+    <h2 class="title">Registro Doctores</h2>
+    <br>
+    <div class="container">
+    <form id="doctorForm">
+        <div class="formDoc">
+            <label for="nombreDoctor">Nombre:</label>
+            <input class="casilla" type="text" id="nombreDoctor" ><br>
+            <p></p>
+        </div>
+        <div class="formDoc">
+            <label for="apellidoDoctor">Apellidos:</label>
+            <input class="casilla" type="text" id="apellidoDoctor"><br>
+            <p></p>
+        </div>
+        
+        <div class="formDoc">
+            <label for="identificacionDoctor">Documento:</label>
+            <input class="casilla" type="number" id="identificacionDoctor" ><br>
+            <p></p>
+        </div>
+    
+        <div class="formDoc">
+            <h4>Especialidad</h4>
+        <select class="casilla" name ="especialidadDoctor" id="especialidadDoctor" required>
+            <option value="Medicina general">Medicina general</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina interna">Medicina interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitación física">Rehabilitación física</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+            </select>
+            <br>
+        </div >
+        <br>
+        <div class="formDoc">
+            <label for="consultorioDoctor">Consultorio:</label>
+            <input class="casilla" type="number" id="consultorioDoctor" ><br>
+            <p></p>
+        </div>
+        <div class="formDoc">
+            <label for="emailDoctor">Email:</label>
+            <input class="casilla" type="text" id="emailDoctor" ><br>
+            <p></p>
+        </div>
+            <button class="regDoc" type="submit">Registrar doctor</button>
+    </form>
+</div>
+    <br>
+        <h2 class="title">Lista de Doctores</h2>
+        <br>
+        <table id="doctorTable"class="doctorTable">
+            <thead>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Documento</th>
+                <th>Especialidad</th>
+                <th>Consultorio</th>
+                <th>Email</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+
+    </form>
+</main>
+    
+</body>
+<script src="/js/doctors.js"></script>
+</html>

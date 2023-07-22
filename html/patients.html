@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario pacientes</title>
+  <link rel="stylesheet" href="/css/Style form.css ">  
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<header>
+       
+    <div class="logo">
+     <img src = "/Img/logo hospital.png" alt="Logo hospital">
+       <!--Hospital TakeCare</div>--> 
+      </div>
+       <nav>
+           <a href="home.html">Inicio</a>  <!-- enlaces a pestañas--> 
+           <a href="doctors.html">Registro Doctores</a>
+           <a href="listDoctors.html">Lista Doctores</a>
+          <a href="patients.html">Registro Pacientes</a>
+          <a href="listPatients.html">Lista Pacientes</a>
+          
+  </nav>
+</header>
+<body>
+<main>
+    <h2 class="title">Registro Pacientes</h2>
+    <br>
+    <div class="containerPacientes">
+    <form id="pacienteForm">
+        <div class="formDoc">
+            <label for="nombrePaciente">Nombre:</label>
+            <input class="casilla" type="text" id="nombrePaciente" required><br>
+            <p></p>
+        </div>
+        <div class="formDoc">
+            <label for="apellidoPaciente">Apellidos:</label>
+            <input class="casilla" type="text" id="apellidoPaciente" required><br>
+            <p></p>
+        </div>
+        
+        <div class="formDoc">
+            <label for="identificacionPaciente">Documento:</label>
+            <input class="casilla" type="number" id="identificacionPaciente" required><br>
+            <p></p>
+        </div>
+
+        <div class="formDoc">
+            <label for="edadPaciente">Edad:</label>
+            <input class="casilla" type="number" id="edadPaciente" required><br>
+            <p></p>
+        </div>
+        <div class="formDoc">
+            <label for="telefonoPaciente">Teléfono:</label>
+            <input class="casilla" type="number" id="telefonoPaciente" required><br>
+            <p></p>
+        </div>
+    
+        <div class="formDoc">
+            <h4>Especialidad</h4>
+        <select class="casilla" name ="especialidadPaciente" id="especialidadPaciente" required>
+            <option value="Medicina general">Medicina general</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina interna">Medicina interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitación física">Rehabilitación física</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+            </select>
+            <br>
+        </div >
+        <br>
+        
+            <button class="regDoc" type="submit">Registrar paciente</button>
+    </form>
+</div>
+    <br>
+        <h2 class="title">Lista de Pacientes</h2>
+        <br>
+        <table id="pacienteTable"class="doctorTable">
+            <thead>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Documento</th>
+                <th>Edad</th>
+                <th>Teléfono</th>
+                <th>Especialidad</th>
+                
+            </thead>
+            <tbody></tbody>
+        </table>
+
+
+    </form>
+</main>
+    
+</body>
+<script src="/js/patients.js"></script>
+</html>
